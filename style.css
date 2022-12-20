@@ -1,15 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Set the default font and text color for the body */
+* {
+  border: 1px solid #000;
+  margin: 0;
+  padding:0;
+  border:0;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  
 }
 
+div {
+  margin: 0;
+  padding:0;
+  border:0;
+  height: 100vh;
+  padding-top: 4vh; /*Compensate for navbar*/
+}
+
+nav {
+  position: fixed; /* Fix the navigation bar to the top of the screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(241, 148, 148);
+}
+
+nav li {
+  float: left; /* float the list items to the left */
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove default margins */
+  padding: 0; /* remove default padding */
+  left: 20px;
+  overflow: hidden; /* prevent content from spilling out */
+  background-color: #333; /* set a background color */
+}
+
+/* Style the h1 element with a teal color and center alignment */
 h1 {
   color: #00b8d4;
   text-align: center;
 }
 
+/* Style the a elements with a teal color and no text decoration */
 a {
   color: #00b8d4;
   text-decoration: none;
+}
+
+/*Style the Title*/
+#Title {
+  top:20vh
+}
+
+/* Style the about-me section */
+#about-me {
+  background-color: #F7D6E4; /* Pastel pink color */
+}
+
+/* Style the projects section */
+#projects {
+  background-color: #B2D8D8; /* Pastel blue color */
+}
+
+footer {
+  margin: 0;
+  padding:0;
+  border:0;
+  height: 30vh;
+  background-color: #7b73e3; /* Pastel blue color */
 }
