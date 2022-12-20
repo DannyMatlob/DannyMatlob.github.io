@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 /*Style the Title*/
 #Title {
   top:20vh
@@ -56,6 +57,8 @@ footer {
   background-color: #7b73e3; /* Pastel blue color */
 }
 
+=======
+>>>>>>> c142750 (Better Styling)
 a:hover {
   color: #31c5b9; /* set the background color on hover */
   transition: color 0.5s; /* add a transition effect */
@@ -133,4 +136,8 @@ nav img {
 #footer li {
   /*float:right;*/
   list-style-type: none; /* remove bullet points */
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c142750 (Better Styling)
