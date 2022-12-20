@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Set the default font and text color for the body */
 * {
   border: 1px solid #000;
@@ -11,51 +10,26 @@ html {
   border:0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono');
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Martian Mono', monospace;
   color: #333;
-  background-color: #fff;
+  background-color: #DFF6FF;
   font-size: 2rem;
   margin: 0;
   padding: 0;
   
 }
 
-div {
-  margin: 0;
-  padding:0;
-  border:0;
-  height: 100vh;
-  padding-top: 4vh; /*Compensate for navbar*/
-}
-
-nav {
-  position: fixed; /* Fix the navigation bar to the top of the screen */
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(241, 148, 148);
-}
-
-nav li {
-  float: left; /* float the list items to the left */
-  list-style-type: none; /* remove bullet points */
-  margin: 0; /* remove default margins */
-  padding: 0; /* remove default padding */
-  left: 20px;
-  overflow: hidden; /* prevent content from spilling out */
-  background-color: #333; /* set a background color */
-}
-
 /* Style the h1 element with a teal color and center alignment */
 h1 {
-  color: #00b8d4;
+  color: #000000;
   text-align: center;
 }
 
 /* Style the a elements with a teal color and no text decoration */
 a {
-  color: #00b8d4;
+  color: #fbfbfb;
   text-decoration: none;
 }
 
@@ -80,4 +54,83 @@ footer {
   border:0;
   height: 30vh;
   background-color: #7b73e3; /* Pastel blue color */
+}
+
+a:hover {
+  color: #31c5b9; /* set the background color on hover */
+  transition: color 0.5s; /* add a transition effect */
+}
+
+
+div {
+  margin: 0;
+  padding:0;
+  border:0;
+  height: 100vh;
+  padding-top: 4vh; /*Compensate for navbar*/
+}
+
+/*Style the Navbar*/
+nav {
+  position: fixed; /* Fix the navigation bar to the top of the screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+#logo {
+  float: left;
+}
+
+#logo:hover {
+  background-color: #31c5b9;
+  transition: background-color 0.5s; /* add a transition effect */
+}
+
+nav li {
+  float: right;
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove default margins */
+  padding: 0; /* remove default padding */
+  margin-right: 25px; /* add some space between the items */
+  overflow: hidden; /* prevent content from spilling out */
+}
+nav a {
+  color: white;
+}
+nav img {
+  width: 80px;
+}
+
+/*Style the Title*/
+#title {
+  top:20vh;
+  background: linear-gradient(to bottom, #DFF6FF, #5D8BF4);
+}
+
+/* Style the projects section */
+#about-me {
+  /*background-color: #5D8BF4;*/
+  background: linear-gradient(to bottom, #5D8BF4, #3680ff);
+}
+
+/* Style the about-me section */
+#projects {
+  /*background-color: #3680ff; */
+  background: linear-gradient(to bottom, #3680ff, #363dff);
+}
+
+#footer {
+  color:white;
+  margin: 0;
+  padding:0;
+  border:0;
+  height: 20vh;
+  background-color: #363dff; /* Pastel blue color */
+}
+
+#footer li {
+  /*float:right;*/
+  list-style-type: none; /* remove bullet points */
 }
