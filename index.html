@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <meta charset="utf-8">
-  <title>My Project Portfolio</title>
 </head>
 <body>
-  <!-- Navigation bar -->
-  <nav>
-    <ul>
-      <li id="logo"><a href="#title"><img src="logo.png" alt="DM"></a></li>
-      <li><a href="#footer">Contact</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about-me">About Me</a></li>
-      
-      
-    </ul>
-  </nav>
-
-  <!-- Title Section -->
-  <div id="title">
-    <h1>My Project Portfolio</h1>
-  </div>
-  <!-- About me Section -->
-  <div id="about-me">
-    <h2>About me</h2>
-    <p>Here you can find information about me and my programming skills and experience.</p>
-  </div>
-  <!-- Projects Section -->
-  <div id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Project 1</a></li>
-      <li><a href="#">Project 2</a></li>
-      <li><a href="#">Project 3</a></li>
-    </ul>
-  </div>
-  <!-- Footer -->
-  <div id="footer">
-    
-    <ul>
-      <li id="contactMe">Contact me at:</li>
-      <li>Email: <a href="mailto:matlobdanny@gmail.com">matlobdanny@gmail.com</a></li>
-      <li>Mobile Phone: 408-518-9804</li>
-    </ul>
-  </div>
-
+  <div id="secondBody">
+    <header>
+      <nav>
+        <img src="whiteLogo.png" id="logo">
+        <a href="mailto:matlobdanny@gmail.com?subject=Mail%20from%20dannymatlob.github.io"><img src="mail.png"id="mail"></a>
+        <a href="https://github.com/DannyMatlob"><img src="githubLogo.png" id="ghub"></a>
+      </nav>
+    </header>
+    <main>
+      <div id="descriptionBox">
+        <div id="projectBox">
+          <div class="project" id="active">
+            <h1>About Me</h1>
+            <p>My name is Danny Matlob and I'm a Software Engineer based in San Jose, California. I am currently a third year student at
+              San Jose State University, and I am interested in Machine Learning, Database Management, and Multi-threading.
+            </p>
+          </div>
+          <div class="project" id="hidden">
+            <h2>Project 1</h2>
+            <p>Description of project 1 goes here</p>
+          </div>
+          <div class="project" id="hidden">
+            <h2>Project 2</h2>
+            <p>Description of project 2 goes here</p>
+          </div>
+          <div class="project" id="hidden">
+            <h2>Project 3</h2>
+            <p>Description of project 3 goes here</p>
+          </div>
+          <div class="project" id="hidden">
+            <h2>Project 4</h2>
+            <p>Description of project 4 goes here</p>
+          </div>
+        </div>
+      </div>
+      <div id="project-buttons">
+        <h1>Projects</h1>
+        <a class="project-button" onclick="return false" href="#" id="link1">Spellcast Solver</a>
+        <a class="project-button" onclick="return false" href="#" id="link2">Portfolio Website</a>
+        <a class="project-button" onclick="return false" href="#" id="link3">Vietnamese Refugee Story</a>
+        <a class="project-button" onclick="return false" href="#" id="link4">Project 4</a>
+      </div>
+    </div>
+  </main>
+  <script src="descriptions.js"></script>
 </body>
 </html>
