@@ -2,50 +2,70 @@
 <html>
 <head>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div id="secondBody">
     <header>
       <nav>
-        <img src="whiteLogo.png" id="logo">
-        <a href="mailto:matlobdanny@gmail.com?subject=Mail%20from%20dannymatlob.github.io"><img src="mail.png"id="mail"></a>
-        <a href="https://github.com/DannyMatlob"><img src="githubLogo.png" id="ghub"></a>
+        <img src="assets/whiteLogo.png" id="logo">
+        <a href="mailto:matlobdanny@gmail.com?subject=Mail%20from%20dannymatlob.github.io"><img src="assets/mail.png"id="mail"></a>
+        <a href="https://github.com/DannyMatlob"><img src="assets/githubLogo.png" id="ghub"></a>
+        <a href="assets/resume.pdf"><img src="assets/resume.png" id="resume" target="_blank"></a>
       </nav>
     </header>
     <main>
       <div id="descriptionBox">
-        <div id="projectBox">
+        <div class="about" id="projectBox">
           <div class="project" id="active">
             <h1>About Me</h1>
             <p>My name is Danny Matlob and I'm a Software Engineer based in San Jose, California. I am currently a third year student at
-              San Jose State University, and I am interested in Machine Learning, Database Management, and Multi-threading.
+              San Jose State University, and I am interested in Machine Learning, Database Management, and Multi-threading. You can contact me at:
             </p>
+            <p id = "contact">matlobdanny@gmail.com</p>
+            <p id ="contact">408-518-9804</p> 
+            <p>I strongly prefer you email me before calling. You can find my resume linked above.</p>
           </div>
           <div class="project" id="hidden">
-            <h2>Project 1</h2>
-            <p>Description of project 1 goes here</p>
+            <h1>Discord Spellcast/Boggle Solver</h1>
+            <p>This program was originally designed to solve the game of Spellcast on Discord, and later on 
+              I discovered the game is generally called 5x5 Boggle. I applied OOP principles when creating this program,
+              making sure to cleanly organize the code into classes that mesh cleanly with eachother. I divide the 5x5 grid
+              into nodes and connect them together. Then I recursively search for combinations of words that I will match
+              to a dictionary of actual words I store in a hashset. The program runs and accepts user input through the terminal.</p>
+              <a href="https://github.com/DannyMatlob/Spellcast-Solver" target="_blank">Github Page</a>
           </div>
           <div class="project" id="hidden">
-            <h2>Project 2</h2>
-            <p>Description of project 2 goes here</p>
+            <h1>Portfolio Website</h1>
+            <p>You're actually looking at my portfolio website right now! This was my first time sitting down and applying my knowledge
+              to build a website as cleanly as I could. It uses vanilla Javascript with CSS for all the animations and effects. I learned
+              many things about the quirks of UI/UX development, and I hit many roadblocks that I managed to eventually overcome. My favorite
+              part of this project was the particle system in the background which was done using OOP principles in Javascript.
+            </p>
+            <a href="https://github.com/DannyMatlob/DannyMatlob.github.io" target="_blank">Github Page</a>
           </div>
           <div class="project" id="hidden">
-            <h2>Project 3</h2>
-            <p>Description of project 3 goes here</p>
+            <h1>Asian American Studies Project</h1>
+            <p>This project is my attempt at a text-based story game where the user follows the life of a vietnamese refugee and makes choices that 
+              impact the outcome of the game. The challenge for this project was properly organizing all of the text and dialogue so that I don't 
+              get lost. In order to implement choices, I had a 
+              function that handles user input and simply returns a binary choice. I decided to make each dialogue option its own function so that
+              the functions can call eachother all the way down the line until they hit the end of the story, all without ugly loops.
+            </p>
+            <a href="https://github.com/DannyMatlob/AAS1-Unessay-Vietnamese-Refugee-Story" target="_blank">Github Page</a>
           </div>
           <div class="project" id="hidden">
-            <h2>Project 4</h2>
+            <h1>Project 4</h1>
             <p>Description of project 4 goes here</p>
           </div>
         </div>
       </div>
       <div id="project-buttons">
         <h1>Projects</h1>
-        <a class="project-button" onclick="return false" href="#" id="link1">Spellcast Solver</a>
-        <a class="project-button" onclick="return false" href="#" id="link2">Portfolio Website</a>
-        <a class="project-button" onclick="return false" href="#" id="link3">Vietnamese Refugee Story</a>
-        <a class="project-button" onclick="return false" href="#" id="link4">Project 4</a>
+        <a class="about" onclick="return false" href="#" id="link1">Spellcast Solver</a>
+        <a class="about" onclick="return false" href="#" id="link2">Portfolio Website</a>
+        <a class="about" onclick="return false" href="#" id="link3">AAS-1 Project</a>
+        <a class="about" onclick="return false" href="#" id="link4">Project 4</a>
       </div>
     </div>
   </main>
