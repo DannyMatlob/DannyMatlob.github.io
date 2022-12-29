@@ -20,6 +20,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    /*border: 2px solid white;*/
 }
 
 /*Header*/
@@ -56,7 +57,12 @@ nav a img{
 #logo {
     width: 80px;
     transform: rotateY(360deg);
-    transition: 5000ms;
+    transition: 2000ms;
+}
+
+#logo:hover {
+    transform: rotateY(180deg);
+    transition: 2000ms;
 }
 
 #logoNav {
@@ -79,24 +85,45 @@ main {
     justify-content: space-between;
 }
 
-
 #descriptionBox {
     margin-top: 40px;
     margin-right: 50px;
     margin-bottom: 20px;
 }
 
+#contact {
+    margin:5px;
+    margin-left: 20px;
+    color: rgb(251, 225, 139);
+    font-size: large;
+}
+
 #projectBox {
-    
-    max-width: 600px;
-    min-width: 500px;
+    width: 650px;
     margin-bottom: 50px;
     position: relative;
 }
 
 #projectBox div {
+    width: 100%;
     position: absolute;
     overflow: hidden;
+}
+
+#projectBox div a{
+    font-size: 16pt;
+    text-decoration: none;
+    color: bisque;
+    transition: 300ms;
+}
+
+#projectBox div a:hover{
+    font-size: 20pt;
+    text-decoration: underline;
+    color: bisque;
+    text-decoration-thickness: 3px;
+    transition: 300ms;
+    text-underline-offset: 6px;
 }
 
 #projectBox:before {
@@ -107,7 +134,21 @@ main {
     border-radius: 25px;
     content: "";
     width: 10px;
-    height: 180px;
+    height: 240px;
+    transition: 300ms;
+}
+
+#projectBox.about:before {
+    background-color: #90F1EF;
+}
+#projectBox.proj1:before {
+    background-color: #FFD6E0;
+}
+#projectBox.proj2:before {
+    background-color: #FFEF9F;
+}
+#projectBox.proj3:before {
+    background-color: #7BF1A8;
 }
 
 #hidden {
@@ -158,16 +199,30 @@ main {
 }
 
 #project-buttons a:after {
+    content: attr(background-color);
     position: absolute;
     background-color: #6cdfbd;
     top: 20px;
-    right: 235px;
+    right: 175px;
     border-radius: 12px;
     content: "";
     width: 4px;
     height: 20px;
     opacity: 0;
     transition: 500ms;
+}
+
+#project-buttons a.about:after {
+    background-color: #90F1EF;
+}
+#project-buttons a.proj1:after {
+    background-color: #FFD6E0;
+}
+#project-buttons a.proj2:after {
+    background-color: #FFEF9F;
+}
+#project-buttons a.proj3:after {
+    background-color: #7BF1A8;
 }
 
 #project-buttons a:hover {
@@ -181,6 +236,32 @@ main {
     transition: 500ms;
 }
 
+#project-buttons a:nth-child(5) {
+    display:none;
+}
 
+@media screen and (max-width: 888px) {
+    #project-buttons {
+        margin-top: 300px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #project-buttons a:after {
+        display:none;
+    }
+
+    #project-buttons a:hover {
+        scale:1.4;
+        color: rgb(53, 117, 173);
+        text-decoration: underline;
+        text-decoration-color: #6cdfbd;
+        text-decoration-thickness: 3px;
+        transition: 500ms;
+        text-underline-offset: 6px;
+    }
+
+  }
 
   
