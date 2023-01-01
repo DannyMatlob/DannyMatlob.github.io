@@ -98,7 +98,7 @@ nav a img:hover{
 
 /*Description CSS*/
 main {
-    padding:20px;
+    padding:10px;
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -107,8 +107,6 @@ main {
 
 #descriptionBox {
     margin-top: 40px;
-    margin-right: 50px;
-    margin-bottom: 20px;
 }
 
 #contact {
@@ -204,6 +202,7 @@ main {
 /*Button CSS */
 #project-buttons {
     margin-top: 80px;
+    margin-left: 30px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -262,13 +261,13 @@ main {
 
 @media screen and (max-width: 938px) {
     #projectBox {
-        width: 320px;
+        width: 45vh;
         margin-bottom: 50px;
         position: relative;
     }
-    
+
     #project-buttons {
-        margin-top: 300px;
+        margin-top: 400px;
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
