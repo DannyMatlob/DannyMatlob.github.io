@@ -5,6 +5,18 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <svg height="90%" width="100%">
+    <defs>
+        <filter id="metaball" width="400%" x="-150%" height="400%" y="-150%">
+            <feGaussianBlur id="blurElement" in="SourceGraphic" stdDeviation="15" result="blur" />
+            <feColorMatrix id="colorMatrixElement" in="blur" mode="matrix" values="1 0 0 0  0
+                                                                                   0 1 0 0  0
+                                                                                   0 0 1 0  0
+                                                                                   0 0 0 30 -15" result="matrix" />
+          </filter>
+      </defs>
+  </svg>
+  <canvas id="canvas1"></canvas>
   <div id="secondBody">
     <header>
       <nav>
@@ -23,8 +35,6 @@
               San Jose State University, and I am interested in Machine Learning, Database Management, and Multi-threading. You can contact me at:
             </p>
             <p id = "contact">matlobdanny@gmail.com</p>
-            <p id ="contact">408-518-9804</p> 
-            <p>I strongly prefer you email me before calling. You can find my resume linked above.</p>
           </div>
           <div class="project" id="hidden">
             <h1>Discord Spellcast/Boggle Solver</h1>
@@ -70,5 +80,6 @@
     </div>
   </main>
   <script src="descriptions.js"></script>
+  <script src="particles.js"></script>
 </body>
 </html>
