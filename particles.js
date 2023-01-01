@@ -88,7 +88,7 @@ window.addEventListener('load', function() {
         }
         init(context) {
             console.log("initializing");
-            for (let i = 0; i<2000; i++) {
+            for (let i = 0; i<1000; i++) {
                 this.particleArray.push(new Particle(this));
             }
         }
