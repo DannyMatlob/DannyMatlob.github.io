@@ -1,6 +1,22 @@
 html {
     line-height: 1.15
 }
+svg {
+    display:none;
+}
+#canvasImg {
+    display: none;
+}
+
+canvas {
+    position:absolute;
+    margin: 0;
+    /*background-color: black;*/
+    filter:url("#metaball");
+    opacity: 1;
+    z-index: -10;
+
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono');
 body {
@@ -52,6 +68,10 @@ nav a img{
 
 #ghub {
     border-radius: 25px;
+}
+
+#resume {
+    border-radius: 10px 0 0 0;
 }
 
 #logo {
