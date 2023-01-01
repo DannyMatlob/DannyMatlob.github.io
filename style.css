@@ -222,8 +222,8 @@ main {
     content: attr(background-color);
     position: absolute;
     background-color: #6cdfbd;
-    top: 20px;
-    right: 175px;
+    top: 32%;
+    right: 92%;
     border-radius: 12px;
     content: "";
     width: 4px;
