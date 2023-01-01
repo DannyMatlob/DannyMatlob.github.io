@@ -260,7 +260,13 @@ main {
     display:none;
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (max-width: 938px) {
+    #projectBox {
+        width: 320px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    
     #project-buttons {
         margin-top: 300px;
         display:flex;
