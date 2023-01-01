@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    const metaballSize = 30;
+    metaballSize = 30;
     canvas.width=window.innerWidth - 10;
     canvas.height=window.innerHeight - 10;
 
@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
             this.dx = this.effect.mouse.x - this.x;
             this.dy = this.effect.mouse.y - this.y;
             this.distance = this.dx**2 + this.dy**2;
-            this.force = (-this.effect.mouse.radius / this.distance) * 0.5;
+            this.force = (-this.effect.mouse.radius / this.distance);
             if (this.force < 0.2) {
                 this.force = -0.2;
             }
@@ -88,7 +88,15 @@ window.addEventListener('load', function() {
         }
         init(context) {
             console.log("initializing");
-            for (let i = 0; i<1500; i++) {
+            let particleCount = (this.width**2)*0.008;
+            if (particleCount > 1500) {particleCount = 1500;}
+            let radius = this.width * 100;
+            if (this.width<1000) {
+                radius = 25000;
+            }
+            console.log(particleCount,radius);
+            this.mouse.radius=radius;
+            for (let i = 0; i<particleCount; i++) {
                 this.particleArray.push(new Particle(this));
             }
         }
@@ -109,6 +117,9 @@ window.addEventListener('load', function() {
         canvas.height=window.innerHeight - 10;
         effect.width = canvas.width;
         effect.height = canvas.height;
+        if (canvas.width<1000) {
+            metaballSize = metaballSize/(canvas.width/(2*metaballSize))
+        }
     });
 
     function animate() {
